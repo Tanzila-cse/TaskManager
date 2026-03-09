@@ -1,0 +1,105 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: url('task.jpg.jpg') no-repeat center center/cover; 
+}
+
+/* Header Styling */
+.features-header {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.features-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.features-header p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+/* Features Container */
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.feature {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer Styling */
+.features-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #007bff;
+    color: white;
+}
+
+.features-footer p {
+    margin-bottom: 1rem;
+}
+
+.features-footer .cta-button {
+    display: inline-block;
+    background: #fff;
+    color: #007bff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.features-footer .cta-button:hover {
+    background: #00c6ff;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-header h1 {
+        font-size: 2rem;
+    }
+    .features-header p {
+        font-size: 1rem;
+    }
+}

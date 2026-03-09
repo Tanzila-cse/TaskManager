@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" id="loginForm" action="process_login.php" method="POST">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <small id="usernameError" class="error-message"></small>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <small id="passwordError" class="error-message"></small>
+            
+            <button type="submit">Login</button>
+            <p>Don't have an account? <a href="index.html">Home</a></p>
+        </form>
+    </div>
+    
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            const usernameError = document.getElementById('usernameError');
+            const passwordError = document.getElementById('passwordError');
+
+            usernameError.textContent = '';
+            passwordError.textContent = '';
+
+            let valid = true;
+
+            if (username === '') {
+                usernameError.textContent = 'Username cannot be empty!';
+                valid = false;
+            }
+
+            if (password === '') {
+                passwordError.textContent = 'Password cannot be empty!';
+                valid = false;
+            }
+
+            if (!valid) {
+                event.preventDefault(); 
+            }
+        });
+    </script>
+</body>
+</html>

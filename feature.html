@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feature.css">
+    <title>Task Manager Features</title>
+</head>
+<body>
+    <header class="features-header">
+        <h1>Our Features</h1>
+        <p>Discover how Task Manager helps you stay organized and productive!</p>
+    </header>
+
+    <main class="features-container">
+        <div class="feature">
+            <i class="icon">📝</i>
+            <h2>Task Organization</h2>
+            <p>Organize your tasks into categories and prioritize them effortlessly.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">⏰</i>
+            <h2>Reminders</h2>
+            <p>Set reminders to never miss an important deadline or event.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">📊</i>
+            <h2>Progress Tracking</h2>
+            <p>Monitor your progress with insightful stats and analytics.</p>
+        </div>
+        <div class="feature">
+            <i class="icon">👥</i>
+            <h2>Team Collaboration</h2>
+            <p>Collaborate with your team by sharing tasks and updates in real-time.</p>
+        </div>
+    </main>
+
+    <footer class="features-footer">
+        <p>Start using Task Manager today to supercharge your productivity!</p>
+        <a href="signup.html" class="cta-button">Get Started</a>
+        <a href="index.html" class="cta-button">Home</a>
+    </footer>
+    <script>
+        // Animate features on hover
+        const features = document.querySelectorAll('.feature');
+    
+        features.forEach(feature => {
+            feature.addEventListener('mouseover', () => {
+                feature.style.backgroundColor = '#e6f7ff'; // Light blue on hover
+            });
+    
+            feature.addEventListener('mouseout', () => {
+                feature.style.backgroundColor = '#f9f9f9'; // Reset background
+            });
+        });
+    </script>
+    
+</body>
+</html>

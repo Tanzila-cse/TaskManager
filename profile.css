@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+     background: url('task.jpg.jpg') no-repeat center center/cover; 
+}
+
+/* Header Styles */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #FFD700;
+}
+
+/* Profile Container Styles */
+.profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.profile-container h1 {
+    color: #007BFF;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.profile-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #007BFF;
+    margin: 1.5rem 0;
+}
+
+/* Tasks List */
+.profile-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.profile-container ul li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 1.1rem;
+    line-height: 1.6;
+   
+    color: #555;
+}
+
+.profile-container ul li:hover {
+    background: #f1f1f1;
+}
+.profile-container ul li small {
+    font-size: 0.9rem;
+    color: #888;
+    display: block;
+    margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .profile-container {
+        padding: 1rem;
+    }
+
+    .profile-container h1 {
+        font-size: 1.5rem;
+    }
+}
